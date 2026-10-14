@@ -1,0 +1,22 @@
+{
+  "new_vs_repeat": {
+    "max": 23,
+    "mean": 0.7145720996732026,
+    "equal": false
+  },
+  "new_vs_previous_run": {
+    "max": 21,
+    "mean": 0.704812091503268,
+    "equal": false
+  },
+  "new_vs_fresh_old_plugin": {
+    "max": 17,
+    "mean": 0.6645833333333333,
+    "equal": false
+  },
+  "repeat_vs_fresh_old_plugin": {
+    "max": 25,
+    "mean": 0.6091064133986928,
+    "equal": false
+  }
+}

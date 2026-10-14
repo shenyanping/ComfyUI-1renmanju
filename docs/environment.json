@@ -1,0 +1,22 @@
+{
+  "recorded_on": "2026-10-14",
+  "python": "3.12.10",
+  "os": "Windows",
+  "gpu": "NVIDIA RTX 3090 24GB",
+  "packages": {
+    "torch": "2.9.0+cu130",
+    "numpy": "1.26.4",
+    "safetensors": "0.6.2",
+    "opencv-python": "4.11.0.86",
+    "einops": "0.8.1",
+    "omegaconf": "2.3.0",
+    "diffusers": "0.36.0",
+    "peft": "0.17.1",
+    "rotary-embedding-torch": "0.8.9",
+    "psutil": "7.1.1",
+    "tqdm": "4.67.1",
+    "av": "19.0.1",
+    "comfyui-frontend-package": "1.53.10"
+  },
+  "note": "实际验收环境快照，不表示只有这些版本可用；未重新安装依赖。"
+}

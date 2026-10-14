@@ -1,0 +1,51 @@
+{
+  "1": {
+    "class_type": "LoadVideo",
+    "inputs": {
+      "file": "请先上传视频.mp4"
+    }
+  },
+  "3": {
+    "class_type": "Starlight26VideoEnhanceUnified",
+    "inputs": {
+      "video": [
+        "1",
+        0
+      ],
+      "输出尺寸": "720p（短边720）",
+      "锐度": "高（原效果）",
+      "输出帧率": "保持原帧率",
+      "每批帧数": 17,
+      "固定种子": 42,
+      "自定义短边": 1080,
+      "切镜保护": true,
+      "切镜阈值": 0.3,
+      "自定义帧率": 60,
+      "倍数插帧": 2,
+      "模型文件": "1ren-topaz-starlight-2.6.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "3",
+        0
+      ],
+      "filename_prefix": "1renmanju/starlight-2.6",
+      "format": "mp4",
+      "format.codec": "h264",
+      "format.codec.encoding": "re-encode",
+      "format.codec.encoding.crf": 16
+    }
+  },
+  "6": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "3",
+        1
+      ]
+    }
+  }
+}

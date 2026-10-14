@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "name": "1ren-topaz-starlight-2.6",
+      "path": "starlight26/1ren-topaz-starlight-2.6.safetensors",
+      "required": true,
+      "size_bytes": 7888191802,
+      "sha256": "972b4dae77f6491d637c9283e78cb7e13b9b9db5c946ff8f26838fec49b677ea",
+      "previous_filename": "starlight-2.6-independent.safetensors",
+      "format": "starlight26_independent",
+      "format_schema_version": "1",
+      "tensor_count": 1175,
+      "origin": "用户本机已有星光2.6权重的独立单文件封装；仅更名，内容不变",
+      "download_url": null,
+      "redistribution_license": "未确认，不随源码分发"
+    },
+    {
+      "name": "RIFE 4.7",
+      "path": "rife/rife47.safetensors",
+      "required": false,
+      "required_when": "输出帧率高于原帧率且有至少两帧",
+      "size_bytes": 21312152,
+      "sha256": "53f1a04f4ef8c0cd914bbd9e47aca394ca050efe2b64df570f756afbefcbc112",
+      "origin": "本机rife47.pth通过weights_only=True读取后保留原精度转换",
+      "download_url": null,
+      "redistribution_license": "未确认，不随源码分发"
+    }
+  ]
+}

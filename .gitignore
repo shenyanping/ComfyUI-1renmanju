@@ -1,0 +1,23 @@
+# 模型、媒体和运行输出单独管理。
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+*.gguf
+*.mp4
+*.mov
+*.avi
+*.webm
+*.npy
+*.npz
+*.log
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+output/
+input/
+dist/
+.env
+.env.*
+*.zip

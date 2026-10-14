@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+# 保持来源快照及原推理文件的字节，确保来源哈希可跨检出复核。
+vendor/** -text
+rife_arch.py -text
+runtime.py -text

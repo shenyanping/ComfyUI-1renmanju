@@ -1,0 +1,15 @@
+{
+  "size": [
+    128,
+    170
+  ],
+  "fps": 60.0,
+  "video_duration": 0.25,
+  "audio_duration": 0.25,
+  "frames": 15,
+  "max_pixel_difference_from_previous": 21,
+  "identical_decoded_pixels": false,
+  "registered_nodes": [
+    "Starlight26VideoEnhanceUnified"
+  ]
+}

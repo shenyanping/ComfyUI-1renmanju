@@ -1,0 +1,228 @@
+{
+  "last_node_id": 7,
+  "last_link_id": 5,
+  "version": 0.4,
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.85,
+      "offset": [
+        120,
+        60
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadVideo",
+      "title": "① 上传视频 · 横竖屏均可",
+      "pos": [
+        0,
+        70
+      ],
+      "size": [
+        320,
+        330
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Starlight26VideoEnhanceUnified",
+      "title": "② 1人漫剧 · 星光2.6视频增强",
+      "pos": [
+        430,
+        70
+      ],
+      "size": [
+        450,
+        470
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "增强视频",
+          "type": "VIDEO",
+          "links": [
+            4
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "处理信息",
+          "type": "STRING",
+          "links": [
+            5
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Starlight26VideoEnhanceUnified"
+      },
+      "widgets_values": [
+        "1ren-topaz-starlight-2.6.safetensors",
+        "720p（短边720）",
+        1080,
+        "高（原效果）",
+        "保持原帧率",
+        60.0,
+        2,
+        17,
+        42,
+        true,
+        0.3
+      ]
+    },
+    {
+      "id": 5,
+      "type": "SaveVideo",
+      "title": "③ 保存视频",
+      "pos": [
+        960,
+        70
+      ],
+      "size": [
+        380,
+        430
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": null,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveVideo"
+      },
+      "widgets_values": [
+        "1renmanju/starlight-2.6",
+        "mp4",
+        "h264",
+        "re-encode",
+        16
+      ]
+    },
+    {
+      "id": 6,
+      "type": "PreviewAny",
+      "title": "处理结果 · 尺寸 / 帧率 / 时长",
+      "pos": [
+        430,
+        650
+      ],
+      "size": [
+        450,
+        240
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 5
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 7,
+      "type": "Note",
+      "title": "使用提示",
+      "pos": [
+        960,
+        580
+      ],
+      "size": [
+        380,
+        230
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Note"
+      },
+      "widgets_values": [
+        "先上传自己的视频，再运行。\n所有处理参数都在中间节点中。\n自定义尺寸/帧率：先选择对应模式，再填写下方数值。\n倍数插帧仅在高级倍数模式时生效。\n其余高级参数通常保持默认即可。"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      3,
+      0,
+      "VIDEO"
+    ],
+    [
+      4,
+      3,
+      0,
+      5,
+      0,
+      "VIDEO"
+    ],
+    [
+      5,
+      3,
+      1,
+      6,
+      0,
+      "STRING"
+    ]
+  ]
+}

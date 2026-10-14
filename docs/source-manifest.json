@@ -1,0 +1,343 @@
+{
+  "recorded_on": "2026-10-14",
+  "upstream_git_revision": null,
+  "revision_note": "本机上游插件无独立Git元数据；以逐文件SHA256固定来源快照，不使用宿主提交号冒充。",
+  "files": [
+    {
+      "path": "vendor/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_plugin_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/__init__.py",
+      "upstream_local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/common/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_plugin_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/__init__.py",
+      "upstream_local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/common/cache.py",
+      "sha256": "37e8e0661cc87f37e9ac5247ea046557eb87bed7baf9709ab528aa4ec1b22b85",
+      "previous_plugin_sha256": "37e8e0661cc87f37e9ac5247ea046557eb87bed7baf9709ab528aa4ec1b22b85",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/cache.py",
+      "upstream_local_sha256": "37e8e0661cc87f37e9ac5247ea046557eb87bed7baf9709ab528aa4ec1b22b85"
+    },
+    {
+      "path": "vendor/common/diffusion/__init__.py",
+      "sha256": "8ded9e4584efe5b4bbfbaee15fc0d6fc81173a23cbe87ea4a432489fb24f984d",
+      "previous_plugin_sha256": "8ded9e4584efe5b4bbfbaee15fc0d6fc81173a23cbe87ea4a432489fb24f984d",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/__init__.py",
+      "upstream_local_sha256": "8ded9e4584efe5b4bbfbaee15fc0d6fc81173a23cbe87ea4a432489fb24f984d"
+    },
+    {
+      "path": "vendor/common/diffusion/config.py",
+      "sha256": "87a27cf4c27d6c14ce81c77fae77cbce084ad0efbec3ba6c8c0c3fa6bfac55bd",
+      "previous_plugin_sha256": "87a27cf4c27d6c14ce81c77fae77cbce084ad0efbec3ba6c8c0c3fa6bfac55bd",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/config.py",
+      "upstream_local_sha256": "87a27cf4c27d6c14ce81c77fae77cbce084ad0efbec3ba6c8c0c3fa6bfac55bd"
+    },
+    {
+      "path": "vendor/common/diffusion/samplers/base.py",
+      "sha256": "2afb7029d3e93431ba9df37e115527f6dd5fa3d76855dc1c936d529ba0a228f2",
+      "previous_plugin_sha256": "2afb7029d3e93431ba9df37e115527f6dd5fa3d76855dc1c936d529ba0a228f2",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/samplers/base.py",
+      "upstream_local_sha256": "2afb7029d3e93431ba9df37e115527f6dd5fa3d76855dc1c936d529ba0a228f2"
+    },
+    {
+      "path": "vendor/common/diffusion/samplers/euler.py",
+      "sha256": "f92a04ba4f101d323347cd0cad7893c8ec261232f09378dd040f7c2c12874b1e",
+      "previous_plugin_sha256": "f92a04ba4f101d323347cd0cad7893c8ec261232f09378dd040f7c2c12874b1e",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/samplers/euler.py",
+      "upstream_local_sha256": "f92a04ba4f101d323347cd0cad7893c8ec261232f09378dd040f7c2c12874b1e"
+    },
+    {
+      "path": "vendor/common/diffusion/schedules/base.py",
+      "sha256": "a7fc37f35846aee5ebe1aeeca9b9f18a7bcc6023c0759be3e13c609e4f1f5bdc",
+      "previous_plugin_sha256": "a7fc37f35846aee5ebe1aeeca9b9f18a7bcc6023c0759be3e13c609e4f1f5bdc",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/schedules/base.py",
+      "upstream_local_sha256": "a7fc37f35846aee5ebe1aeeca9b9f18a7bcc6023c0759be3e13c609e4f1f5bdc"
+    },
+    {
+      "path": "vendor/common/diffusion/schedules/lerp.py",
+      "sha256": "04b4d4fc475c5caa2510a905ce67bfa03fb7d0d9f0e5316c308327ebe868f955",
+      "previous_plugin_sha256": "04b4d4fc475c5caa2510a905ce67bfa03fb7d0d9f0e5316c308327ebe868f955",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/schedules/lerp.py",
+      "upstream_local_sha256": "04b4d4fc475c5caa2510a905ce67bfa03fb7d0d9f0e5316c308327ebe868f955"
+    },
+    {
+      "path": "vendor/common/diffusion/timesteps/base.py",
+      "sha256": "84446d63024b341820742b5e6ee374cf60f65a922efea5e38fc79ab1449d087e",
+      "previous_plugin_sha256": "84446d63024b341820742b5e6ee374cf60f65a922efea5e38fc79ab1449d087e",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/timesteps/base.py",
+      "upstream_local_sha256": "84446d63024b341820742b5e6ee374cf60f65a922efea5e38fc79ab1449d087e"
+    },
+    {
+      "path": "vendor/common/diffusion/timesteps/sampling/trailing.py",
+      "sha256": "370c99d029157c4cc4b6826d9a58ebb6a7e6a61b28ba5f2e3ce633b47a2d08ee",
+      "previous_plugin_sha256": "370c99d029157c4cc4b6826d9a58ebb6a7e6a61b28ba5f2e3ce633b47a2d08ee",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/timesteps/sampling/trailing.py",
+      "upstream_local_sha256": "370c99d029157c4cc4b6826d9a58ebb6a7e6a61b28ba5f2e3ce633b47a2d08ee"
+    },
+    {
+      "path": "vendor/common/diffusion/types.py",
+      "sha256": "b937002661425ddb67082a95d524697b857b7b7693aa7c8d3740ad978870dec0",
+      "previous_plugin_sha256": "b937002661425ddb67082a95d524697b857b7b7693aa7c8d3740ad978870dec0",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/types.py",
+      "upstream_local_sha256": "b937002661425ddb67082a95d524697b857b7b7693aa7c8d3740ad978870dec0"
+    },
+    {
+      "path": "vendor/common/diffusion/utils.py",
+      "sha256": "d4a1f565020160c203f8ee04e7d6fd307bf07ba4e55c67ae9ea769eb68111dbd",
+      "previous_plugin_sha256": "d4a1f565020160c203f8ee04e7d6fd307bf07ba4e55c67ae9ea769eb68111dbd",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/diffusion/utils.py",
+      "upstream_local_sha256": "d4a1f565020160c203f8ee04e7d6fd307bf07ba4e55c67ae9ea769eb68111dbd"
+    },
+    {
+      "path": "vendor/common/distributed/__init__.py",
+      "sha256": "1670b2e67d8d136c56ca3e07946b42a66fe00852a313755903c92aea9490f294",
+      "previous_plugin_sha256": "1670b2e67d8d136c56ca3e07946b42a66fe00852a313755903c92aea9490f294",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/distributed/__init__.py",
+      "upstream_local_sha256": "1670b2e67d8d136c56ca3e07946b42a66fe00852a313755903c92aea9490f294"
+    },
+    {
+      "path": "vendor/common/distributed/advanced.py",
+      "sha256": "616645b5ef96b1340129b8e593e51383938002d03bb709aaa5bb22dfe36c8f95",
+      "previous_plugin_sha256": "616645b5ef96b1340129b8e593e51383938002d03bb709aaa5bb22dfe36c8f95",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/distributed/advanced.py",
+      "upstream_local_sha256": "616645b5ef96b1340129b8e593e51383938002d03bb709aaa5bb22dfe36c8f95"
+    },
+    {
+      "path": "vendor/common/distributed/basic.py",
+      "sha256": "7c9d8aa77d3ae2245ec32802143b51b636b458f57aceb78070ead584c27acc6a",
+      "previous_plugin_sha256": "7c9d8aa77d3ae2245ec32802143b51b636b458f57aceb78070ead584c27acc6a",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/distributed/basic.py",
+      "upstream_local_sha256": "7c9d8aa77d3ae2245ec32802143b51b636b458f57aceb78070ead584c27acc6a"
+    },
+    {
+      "path": "vendor/common/distributed/ops.py",
+      "sha256": "6ac6f714d5021c406f03b6b0d6d1f003060d5ac135202d90043995df51f811c5",
+      "previous_plugin_sha256": "6ac6f714d5021c406f03b6b0d6d1f003060d5ac135202d90043995df51f811c5",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/distributed/ops.py",
+      "upstream_local_sha256": "6ac6f714d5021c406f03b6b0d6d1f003060d5ac135202d90043995df51f811c5"
+    },
+    {
+      "path": "vendor/common/half_precision_fixes.py",
+      "sha256": "24f5073e097ada1c57fd85f02d831e8cacc5fbdaab8289aeb064eb220e6f3367",
+      "previous_plugin_sha256": "24f5073e097ada1c57fd85f02d831e8cacc5fbdaab8289aeb064eb220e6f3367",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/half_precision_fixes.py",
+      "upstream_local_sha256": "24f5073e097ada1c57fd85f02d831e8cacc5fbdaab8289aeb064eb220e6f3367"
+    },
+    {
+      "path": "vendor/common/logger.py",
+      "sha256": "22b212900901b401a060a3ea22aab3c0da1ddbfc1f90c58b5c2f08c37129071b",
+      "previous_plugin_sha256": "22b212900901b401a060a3ea22aab3c0da1ddbfc1f90c58b5c2f08c37129071b",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/common/logger.py",
+      "upstream_local_sha256": "22b212900901b401a060a3ea22aab3c0da1ddbfc1f90c58b5c2f08c37129071b"
+    },
+    {
+      "path": "vendor/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_plugin_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/core/__init__.py",
+      "upstream_local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/core/infer.py",
+      "sha256": "f72374cda904da99263ae74df68bb00b41138165f2daf291835d110b922647b8",
+      "previous_plugin_sha256": "f72374cda904da99263ae74df68bb00b41138165f2daf291835d110b922647b8",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/core/infer.py",
+      "upstream_local_sha256": "f72374cda904da99263ae74df68bb00b41138165f2daf291835d110b922647b8"
+    },
+    {
+      "path": "vendor/models/dit_3b/attention.py",
+      "sha256": "6add8eb0bcf6aaa1646fcd39b820cc1b129f9e88c252c40a37c8e44f017e7c95",
+      "previous_plugin_sha256": "6add8eb0bcf6aaa1646fcd39b820cc1b129f9e88c252c40a37c8e44f017e7c95",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/attention.py",
+      "upstream_local_sha256": "6add8eb0bcf6aaa1646fcd39b820cc1b129f9e88c252c40a37c8e44f017e7c95"
+    },
+    {
+      "path": "vendor/models/dit_3b/embedding.py",
+      "sha256": "dacc6fc8e3fd9b277456470c197a9d16317d61903c39df1fc99f2bd021416412",
+      "previous_plugin_sha256": "dacc6fc8e3fd9b277456470c197a9d16317d61903c39df1fc99f2bd021416412",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/embedding.py",
+      "upstream_local_sha256": "dacc6fc8e3fd9b277456470c197a9d16317d61903c39df1fc99f2bd021416412"
+    },
+    {
+      "path": "vendor/models/dit_3b/mlp.py",
+      "sha256": "af3b8bf0f1bc7e135140e5bd9f63869320f9ea3803c95f8482f21a48f1fa1d3a",
+      "previous_plugin_sha256": "af3b8bf0f1bc7e135140e5bd9f63869320f9ea3803c95f8482f21a48f1fa1d3a",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/mlp.py",
+      "upstream_local_sha256": "af3b8bf0f1bc7e135140e5bd9f63869320f9ea3803c95f8482f21a48f1fa1d3a"
+    },
+    {
+      "path": "vendor/models/dit_3b/mm.py",
+      "sha256": "157033d387a8514ce175f2c58f2c91e06fa50fd4d9501aa2ccf423c35472fa01",
+      "previous_plugin_sha256": "157033d387a8514ce175f2c58f2c91e06fa50fd4d9501aa2ccf423c35472fa01",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/mm.py",
+      "upstream_local_sha256": "157033d387a8514ce175f2c58f2c91e06fa50fd4d9501aa2ccf423c35472fa01"
+    },
+    {
+      "path": "vendor/models/dit_3b/modulation.py",
+      "sha256": "bd100fb65cac0bffd22ec30971487ed03646bc02b1d02fc9838690b59e7197d7",
+      "previous_plugin_sha256": "bd100fb65cac0bffd22ec30971487ed03646bc02b1d02fc9838690b59e7197d7",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/modulation.py",
+      "upstream_local_sha256": "bd100fb65cac0bffd22ec30971487ed03646bc02b1d02fc9838690b59e7197d7"
+    },
+    {
+      "path": "vendor/models/dit_3b/na.py",
+      "sha256": "b7a69d48927afa1b7ee4bc54ed561fdf32e815ada45d9b0dcf1b7d4e2e7abc76",
+      "previous_plugin_sha256": "b7a69d48927afa1b7ee4bc54ed561fdf32e815ada45d9b0dcf1b7d4e2e7abc76",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/na.py",
+      "upstream_local_sha256": "b7a69d48927afa1b7ee4bc54ed561fdf32e815ada45d9b0dcf1b7d4e2e7abc76"
+    },
+    {
+      "path": "vendor/models/dit_3b/nablocks/__init__.py",
+      "sha256": "11bcab5e097422148e0f8c9e9143982d07d87171ccde41b99a7269095d555664",
+      "previous_plugin_sha256": "11bcab5e097422148e0f8c9e9143982d07d87171ccde41b99a7269095d555664",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/nablocks/__init__.py",
+      "upstream_local_sha256": "11bcab5e097422148e0f8c9e9143982d07d87171ccde41b99a7269095d555664"
+    },
+    {
+      "path": "vendor/models/dit_3b/nablocks/attention/__init__.py",
+      "sha256": "040d9a2b21f9d35f595760fac55172e14d6b282d399caa2f2a565627d2d844c2",
+      "previous_plugin_sha256": "040d9a2b21f9d35f595760fac55172e14d6b282d399caa2f2a565627d2d844c2",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/nablocks/attention/__init__.py",
+      "upstream_local_sha256": "040d9a2b21f9d35f595760fac55172e14d6b282d399caa2f2a565627d2d844c2"
+    },
+    {
+      "path": "vendor/models/dit_3b/nablocks/attention/mmattn.py",
+      "sha256": "7e1d027205dacc5431120c7f0f5657ce1ff5b170638e0a33396584f21a860629",
+      "previous_plugin_sha256": "7e1d027205dacc5431120c7f0f5657ce1ff5b170638e0a33396584f21a860629",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/nablocks/attention/mmattn.py",
+      "upstream_local_sha256": "7e1d027205dacc5431120c7f0f5657ce1ff5b170638e0a33396584f21a860629"
+    },
+    {
+      "path": "vendor/models/dit_3b/nablocks/mmsr_block.py",
+      "sha256": "f31f3214b1ab99492f76a70678865d84c38ac0c0ba111cb5049469fe46289e9a",
+      "previous_plugin_sha256": "f31f3214b1ab99492f76a70678865d84c38ac0c0ba111cb5049469fe46289e9a",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/nablocks/mmsr_block.py",
+      "upstream_local_sha256": "f31f3214b1ab99492f76a70678865d84c38ac0c0ba111cb5049469fe46289e9a"
+    },
+    {
+      "path": "vendor/models/dit_3b/nadit.py",
+      "sha256": "67c808bc72e716faf6d3a3a5243f661dc3176b27f17f70d4b9c5fc6666758c08",
+      "previous_plugin_sha256": "67c808bc72e716faf6d3a3a5243f661dc3176b27f17f70d4b9c5fc6666758c08",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/nadit.py",
+      "upstream_local_sha256": "67c808bc72e716faf6d3a3a5243f661dc3176b27f17f70d4b9c5fc6666758c08"
+    },
+    {
+      "path": "vendor/models/dit_3b/normalization.py",
+      "sha256": "0eab8ca136e1274d56928b653de2415c73893b5028e1615af3e74343fef21680",
+      "previous_plugin_sha256": "0eab8ca136e1274d56928b653de2415c73893b5028e1615af3e74343fef21680",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/normalization.py",
+      "upstream_local_sha256": "0eab8ca136e1274d56928b653de2415c73893b5028e1615af3e74343fef21680"
+    },
+    {
+      "path": "vendor/models/dit_3b/patch/__init__.py",
+      "sha256": "c1acc9a82563dc820238de80906f32413ed699e8efae52beddf5389e108283f4",
+      "previous_plugin_sha256": "c1acc9a82563dc820238de80906f32413ed699e8efae52beddf5389e108283f4",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/patch/__init__.py",
+      "upstream_local_sha256": "c1acc9a82563dc820238de80906f32413ed699e8efae52beddf5389e108283f4"
+    },
+    {
+      "path": "vendor/models/dit_3b/patch/patch_v1.py",
+      "sha256": "2f01c37ed7e7374fc3803c70de8142737a028dbb180930292d40800a62efcb10",
+      "previous_plugin_sha256": "2f01c37ed7e7374fc3803c70de8142737a028dbb180930292d40800a62efcb10",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/patch/patch_v1.py",
+      "upstream_local_sha256": "2f01c37ed7e7374fc3803c70de8142737a028dbb180930292d40800a62efcb10"
+    },
+    {
+      "path": "vendor/models/dit_3b/rope.py",
+      "sha256": "389e61c876c0ad551cfd1d26df34c4f670cd2d7db27ca073fc7b266c8858ca0d",
+      "previous_plugin_sha256": "389e61c876c0ad551cfd1d26df34c4f670cd2d7db27ca073fc7b266c8858ca0d",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/rope.py",
+      "upstream_local_sha256": "389e61c876c0ad551cfd1d26df34c4f670cd2d7db27ca073fc7b266c8858ca0d"
+    },
+    {
+      "path": "vendor/models/dit_3b/window.py",
+      "sha256": "61b3e0235e25d3e901271186bbaa43a90dcc1552f003daa3d2844b5126ce7e84",
+      "previous_plugin_sha256": "61b3e0235e25d3e901271186bbaa43a90dcc1552f003daa3d2844b5126ce7e84",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/dit_3b/window.py",
+      "upstream_local_sha256": "61b3e0235e25d3e901271186bbaa43a90dcc1552f003daa3d2844b5126ce7e84"
+    },
+    {
+      "path": "vendor/models/video_vae_v3/modules/attn_video_vae.py",
+      "sha256": "84dff62e9e003bda6654be0c656b19c6c7010f5c22569f4f9b8b73fccad40c8c",
+      "previous_plugin_sha256": "84dff62e9e003bda6654be0c656b19c6c7010f5c22569f4f9b8b73fccad40c8c",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/video_vae_v3/modules/attn_video_vae.py",
+      "upstream_local_sha256": "84dff62e9e003bda6654be0c656b19c6c7010f5c22569f4f9b8b73fccad40c8c"
+    },
+    {
+      "path": "vendor/models/video_vae_v3/modules/causal_inflation_lib.py",
+      "sha256": "5dd3dedbbfefd7de671e1c126b106a4d6f227bd36b0cb9c391aa92ccb67128d4",
+      "previous_plugin_sha256": "5dd3dedbbfefd7de671e1c126b106a4d6f227bd36b0cb9c391aa92ccb67128d4",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/video_vae_v3/modules/causal_inflation_lib.py",
+      "upstream_local_sha256": "5dd3dedbbfefd7de671e1c126b106a4d6f227bd36b0cb9c391aa92ccb67128d4"
+    },
+    {
+      "path": "vendor/models/video_vae_v3/modules/context_parallel_lib.py",
+      "sha256": "d455a0b2f0994e10870ea766b09f7e2297de018929e5664ee78f66a96018a36b",
+      "previous_plugin_sha256": "d455a0b2f0994e10870ea766b09f7e2297de018929e5664ee78f66a96018a36b",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/video_vae_v3/modules/context_parallel_lib.py",
+      "upstream_local_sha256": "d455a0b2f0994e10870ea766b09f7e2297de018929e5664ee78f66a96018a36b"
+    },
+    {
+      "path": "vendor/models/video_vae_v3/modules/global_config.py",
+      "sha256": "d919db5ff73d8ae9d722b76ababb4019a58d36fadd67212cefc12f6f4f72082d",
+      "previous_plugin_sha256": "d919db5ff73d8ae9d722b76ababb4019a58d36fadd67212cefc12f6f4f72082d",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/video_vae_v3/modules/global_config.py",
+      "upstream_local_sha256": "d919db5ff73d8ae9d722b76ababb4019a58d36fadd67212cefc12f6f4f72082d"
+    },
+    {
+      "path": "vendor/models/video_vae_v3/modules/types.py",
+      "sha256": "fdb693bc8c98174915b00050bc21889f1ebe6b34ca3c1cf97e65bddf7ca5605f",
+      "previous_plugin_sha256": "fdb693bc8c98174915b00050bc21889f1ebe6b34ca3c1cf97e65bddf7ca5605f",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/models/video_vae_v3/modules/types.py",
+      "upstream_local_sha256": "fdb693bc8c98174915b00050bc21889f1ebe6b34ca3c1cf97e65bddf7ca5605f"
+    },
+    {
+      "path": "vendor/optimization/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_plugin_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/optimization/__init__.py",
+      "upstream_local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/optimization/blockswap.py",
+      "sha256": "7536cdc9c7732d91906788c881262a3f07fab633c0d6ccea8898cbb872243e50",
+      "previous_plugin_sha256": "7536cdc9c7732d91906788c881262a3f07fab633c0d6ccea8898cbb872243e50",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/optimization/blockswap.py",
+      "upstream_local_sha256": "7536cdc9c7732d91906788c881262a3f07fab633c0d6ccea8898cbb872243e50"
+    },
+    {
+      "path": "vendor/optimization/compatibility.py",
+      "sha256": "c8cfe80fc0123d85e5bbc956224b73360c73644a1b7ea50ebf85fecd429e97ec",
+      "previous_plugin_sha256": "c8cfe80fc0123d85e5bbc956224b73360c73644a1b7ea50ebf85fecd429e97ec",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/optimization/compatibility.py",
+      "upstream_local_sha256": "c8cfe80fc0123d85e5bbc956224b73360c73644a1b7ea50ebf85fecd429e97ec"
+    },
+    {
+      "path": "vendor/optimization/memory_manager.py",
+      "sha256": "a16d13554ef8f981d142400d22f5e485eb63f59775574e0c755c4bd3b49ebad4",
+      "previous_plugin_sha256": "a16d13554ef8f981d142400d22f5e485eb63f59775574e0c755c4bd3b49ebad4",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/optimization/memory_manager.py",
+      "upstream_local_sha256": "a16d13554ef8f981d142400d22f5e485eb63f59775574e0c755c4bd3b49ebad4"
+    },
+    {
+      "path": "vendor/optimization/performance.py",
+      "sha256": "527b098c095f4f8998fde9b99e2942c76f422eb4286bad7eadf46142410678ff",
+      "previous_plugin_sha256": "527b098c095f4f8998fde9b99e2942c76f422eb4286bad7eadf46142410678ff",
+      "upstream_local_path": "ComfyUI-SeedVR2_VideoUpscaler/src/optimization/performance.py",
+      "upstream_local_sha256": "527b098c095f4f8998fde9b99e2942c76f422eb4286bad7eadf46142410678ff"
+    },
+    {
+      "path": "rife_arch.py",
+      "sha256": "75b9e28d53ac9342f9a7b18fb2b78cc1ffcf002bf22872997d7faceb496173bc",
+      "previous_plugin_sha256": "75b9e28d53ac9342f9a7b18fb2b78cc1ffcf002bf22872997d7faceb496173bc",
+      "upstream_local_path": "comfyui-frame-interpolation_cudafull/vfi_models/rife/rife_arch.py",
+      "upstream_local_sha256": "d26917f59045b6e47d1f558bfa0d0473257d8dc9f5a3a483abe6af52ddf94462"
+    }
+  ]
+}
