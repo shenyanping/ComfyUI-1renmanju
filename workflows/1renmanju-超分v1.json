@@ -51,7 +51,7 @@
     {
       "id": 3,
       "type": "Starlight26VideoEnhanceUnified",
-      "title": "② 1人漫剧 · 星光2.6视频增强",
+      "title": "② 1人漫剧 · 超分V1",
       "pos": [
         430,
         70
@@ -92,7 +92,7 @@
         "Node name for S&R": "Starlight26VideoEnhanceUnified"
       },
       "widgets_values": [
-        "1ren-topaz-starlight-2.6.safetensors",
+        "1ren-chaofen-v1.safetensors",
         "720p（短边720）",
         1080,
         "高（原效果）",
@@ -139,7 +139,7 @@
         "Node name for S&R": "SaveVideo"
       },
       "widgets_values": [
-        "1renmanju/starlight-2.6",
+        "1renmanju/chaofen-v1",
         "mp4",
         "h264",
         "re-encode",

@@ -2,7 +2,7 @@
 
 1人漫剧的本地 ComfyUI 视频增强插件。一个节点完成模型选择、按比例调整分辨率、锐度设置和目标帧率转换，保留声音及正常播放速度。
 
-当前模型名：**`1ren-topaz-starlight-2.6`**。这是现有星光2.6独立实验方案的项目内名称，不是重新训练的模型，也不是 Topaz 官方发布的插件。运行不调用 Topaz 程序，不读取原来的零散模型文件。
+当前模型名：**`1ren-chaofen-v1`**。采用独立单文件加载，在本地完成视频增强；无需读取原来的零散模型文件。此名称用于项目内管理，改名不改变权重内容或来源。
 
 ## 安装
 
@@ -17,11 +17,11 @@
 git clone https://github.com/shenyanping/ComfyUI-1renmanju.git
 ```
 
-**模型下载（百度网盘）**：[ComfyUI-1renmanju](https://pan.baidu.com/s/15_CEVT13DbK5Cimagh5O1A)，提取码：`ugf8`。下载后按下表放置文件。
+**模型下载（百度网盘）**：[ComfyUI-1renmanju](https://pan.baidu.com/s/15_CEVT13DbK5Cimagh5O1A)，提取码：`ugf8`。下载后按下表放置文件。如网盘中的主文件尚未更名，请改为 `1ren-chaofen-v1.safetensors`；只改文件名，不转换或重新保存权重。
 
 | 文件 | 放置位置（相对 ComfyUI） | 用途 |
 |---|---|---|
-| `1ren-topaz-starlight-2.6.safetensors` | `models/starlight26/` | 必需，约7.89 GB |
+| `1ren-chaofen-v1.safetensors` | `models/starlight26/` | 必需，约7.89 GB |
 | `rife47.safetensors` | `models/rife/` | 升帧率时需要，约21.3 MB |
 
 完整大小、SHA256及来源见 [模型清单](models/manifest.json) 和 [模型管理说明](docs/MODELS.md)。保持原帧率或降帧率不需要RIFE权重。
@@ -32,14 +32,14 @@ git clone https://github.com/shenyanping/ComfyUI-1renmanju.git
 
 ## 使用
 
-拖入 [示例工作流](workflows/1renmanju-星光2.6.json)，上传自己的视频，设置中间节点，点击运行。流程只有「加载视频 → 视频增强 → 保存视频」，另接一个处理信息显示框。
+拖入 [示例工作流](workflows/1renmanju-超分v1.json)，上传自己的视频，设置中间节点，点击运行。流程只有「加载视频 → 视频增强 → 保存视频」，另接一个处理信息显示框。
 
 | 参数 | 怎么用 |
 |---|---|
-| 模型文件 | 选择 `1ren-topaz-starlight-2.6.safetensors` |
+| 模型文件 | 选择 `1ren-chaofen-v1.safetensors` |
 | 输出尺寸 | 720p/1080p/1440p/4K均按短边定义，自动保持横竖比例；也支持原尺寸、2倍、自定义 |
 | 自定义短边 | 仅「输出尺寸=自定义短边」生效，例如720；宽高会取偶数 |
-| 锐度 | 高=原效果，中和轻更柔和；尚未证明与官方锐度档位一一等价 |
+| 锐度 | 高=原效果，中和轻更柔和；三档为本插件的相对锐度设置 |
 | 输出帧率 | 保持原帧率、30、48、60、自定义，或高级倍数模式 |
 | 自定义帧率 | 仅自定义模式生效，支持1～240及29.97等小数 |
 | 倍数插帧 | 仅高级倍数模式生效，可选2或4 |
@@ -62,7 +62,7 @@ git clone https://github.com/shenyanping/ComfyUI-1renmanju.git
 
 ## 边界
 
-当前为8位SDR流程；没有官方引擎完整等价性结论。长视频会占用较多内存，建议先截短验证；4K长片和其他硬件尚未验收。切镜识别可能受闪光/高速运动影响。取消会在当前推理步骤结束后响应。音轨可能重新编码，保留声音内容而非字节不变。
+当前为8位SDR流程。长视频会占用较多内存，建议先截短验证；4K长片和其他硬件尚未验收。切镜识别可能受闪光/高速运动影响。取消会在当前推理步骤结束后响应。音轨可能重新编码，保留声音内容而非字节不变。
 
 ## 开发与来源
 

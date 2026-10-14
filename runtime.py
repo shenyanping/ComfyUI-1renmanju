@@ -1,4 +1,4 @@
-"""只读取单个 safetensors；运行时不读取原分片或调用 Topaz。"""
+"""只读取单个 safetensors；运行时不读取原分片或调用外部处理程序。"""
 import gc
 import json
 import math
@@ -15,7 +15,7 @@ def inspect_checkpoint(path):
     with safe_open(str(path), framework="pt", device="cpu") as f:
         meta = f.metadata() or {}
         if meta.get("format") != "starlight26_independent" or meta.get("schema_version") != "1":
-            raise ValueError("请选择星光 2.6 独立单文件模型，普通 SD 模型不能用于此节点。")
+            raise ValueError("请选择1ren-chaofen-v1 单文件模型，普通 SD 模型不能用于此节点。")
         expected = json.loads((Path(__file__).parent / "architecture.json").read_text(encoding="utf-8"))
         for name in ("dit_config", "vae_config"):
             if json.loads(meta.get(name, "null")) != expected[name]:
@@ -153,7 +153,7 @@ def upscale(path, images, target_height, batch_frames, seed, device, progress=la
                 output[written:written+len(result)-skip].copy_(result[skip:])
                 written += len(result)-skip
                 progress(written, count)
-                print(f"[星光2.6独立超分] 已完成 {written}/{count} 帧", flush=True)
+                print(f"[1ren-chaofen-v1] 已完成 {written}/{count} 帧", flush=True)
                 del frames, result
                 start = end-1
         return output

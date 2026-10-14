@@ -52,10 +52,10 @@ class VideoContractTests(unittest.TestCase):
             controls.resample_frames(torch.zeros(2,64,64,3), 24, 60, torch.device('cpu'), check_cancel=cancel)
 
     def test_workflow_and_manifest(self):
-        workflow = json.loads((ROOT / 'workflows/1renmanju-星光2.6.json').read_text(encoding='utf8'))
+        workflow = json.loads((ROOT / 'workflows/1renmanju-超分v1.json').read_text(encoding='utf8'))
         node = next(n for n in workflow['nodes'] if n['type'] == 'Starlight26VideoEnhanceUnified')
         self.assertEqual(len(node['widgets_values']), 11)
-        self.assertEqual(node['widgets_values'][0], '1ren-topaz-starlight-2.6.safetensors')
+        self.assertEqual(node['widgets_values'][0], '1ren-chaofen-v1.safetensors')
         self.assertEqual(len(workflow['nodes']), 5)
         prompt = json.loads((ROOT / 'workflows/1renmanju-api.json').read_text(encoding='utf8'))
         self.assertEqual(prompt['3']['inputs']['模型文件'], node['widgets_values'][0])

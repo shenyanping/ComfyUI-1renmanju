@@ -9,6 +9,8 @@
 
 此链接由项目维护者提供。模型不随Git仓库下载，插件也不会自动下载；取得文件后按下方目录放置，再运行校验工具确认文件完整。
 
+如网盘中的主模型尚未更名，请将文件名改为 `1ren-chaofen-v1.safetensors`。文件内容及SHA256没有改变，不需要重新转换；`rife47.safetensors`保持原名。
+
 ## 目录
 
 ```text
@@ -16,7 +18,7 @@ ComfyUI/
   custom_nodes/ComfyUI-1renmanju/   # Git管理的插件源码
   models/
     starlight26/
-      1ren-topaz-starlight-2.6.safetensors
+      1ren-chaofen-v1.safetensors
     rife/
       rife47.safetensors
 ```

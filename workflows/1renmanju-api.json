@@ -22,7 +22,7 @@
       "切镜阈值": 0.3,
       "自定义帧率": 60,
       "倍数插帧": 2,
-      "模型文件": "1ren-topaz-starlight-2.6.safetensors"
+      "模型文件": "1ren-chaofen-v1.safetensors"
     }
   },
   "5": {
@@ -32,7 +32,7 @@
         "3",
         0
       ],
-      "filename_prefix": "1renmanju/starlight-2.6",
+      "filename_prefix": "1renmanju/chaofen-v1",
       "format": "mp4",
       "format.codec": "h264",
       "format.codec.encoding": "re-encode",

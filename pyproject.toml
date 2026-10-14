@@ -1,6 +1,6 @@
 [project]
 name = "ComfyUI-1renmanju"
-version = "0.1.0"
-description = "1人漫剧本地视频增强：星光2.6单文件模型、锐度调节、RIFE目标帧率转换"
+version = "0.1.1"
+description = "1人漫剧本地视频增强：1ren-chaofen-v1单文件模型、锐度调节、RIFE目标帧率转换"
 requires-python = ">=3.10"
 readme = "README.md"

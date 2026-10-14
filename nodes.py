@@ -29,7 +29,7 @@ class OneRenManjuVideoEnhance:
     RETURN_NAMES = ("增强视频", "处理信息")
     FUNCTION = "run"
     CATEGORY = "1人漫剧/视频增强"
-    DESCRIPTION = "1ren-topaz-starlight-2.6：比例、锐度、目标帧率及高级参数集中配置，保留原音轨。"
+    DESCRIPTION = "1ren-chaofen-v1：比例、锐度、目标帧率及高级参数集中配置，保留原音轨。"
 
     @classmethod
     def IS_CHANGED(cls, **options):
@@ -47,7 +47,7 @@ class OneRenManjuVideoEnhance:
         model_path = folder_paths.get_full_path_or_raise("starlight26", options["模型文件"])
         inspect_checkpoint(model_path)
         if video.get_color_space() != "sRGB":
-            raise ValueError("当前星光独立节点仅支持 SDR/sRGB 视频，请先正确转换 HDR 素材，避免颜色失真。")
+            raise ValueError("当前超分节点仅支持 SDR/sRGB 视频，请先正确转换 HDR 素材，避免颜色失真。")
         original_w, original_h = video.get_dimensions()
         width, height = resolve_size(original_w, original_h, options["输出尺寸"], settings.get("自定义短边",1080))
         mm.throw_exception_if_processing_interrupted()
@@ -64,7 +64,7 @@ class OneRenManjuVideoEnhance:
         mm.unload_all_models()
         mm.soft_empty_cache()
         bar = ProgressBar(len(images))
-        print(f"[星光2.6] {original_w}×{original_h} → {width}×{height}；锐度 {options['锐度']}；帧率 {float(source_fps):g} → {float(fps):g}",flush=True)
+        print(f"[1ren-chaofen-v1] {original_w}×{original_h} → {width}×{height}；锐度 {options['锐度']}；帧率 {float(source_fps):g} → {float(fps):g}",flush=True)
         enhanced = upscale(model_path, images, height, settings.get("每批帧数",17), settings.get("固定种子",42),
                            mm.get_torch_device(), lambda n,total:bar.update_absolute(n,total), mm.throw_exception_if_processing_interrupted,
                            decoder=SHARPNESS[options["锐度"]], target_width=width)
@@ -83,4 +83,4 @@ class OneRenManjuVideoEnhance:
 
 # 保持最新单节点工作流的类型ID，界面名称和插件目录使用新名称。
 NODE_CLASS_MAPPINGS = {"Starlight26VideoEnhanceUnified": OneRenManjuVideoEnhance}
-NODE_DISPLAY_NAME_MAPPINGS = {"Starlight26VideoEnhanceUnified": "1人漫剧 · 星光2.6视频增强"}
+NODE_DISPLAY_NAME_MAPPINGS = {"Starlight26VideoEnhanceUnified": "1人漫剧 · 超分V1"}
