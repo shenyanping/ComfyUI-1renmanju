@@ -11,6 +11,14 @@
 3. 按下表放好模型。仓库不包含权重，也不自动下载。
 4. 完整重启 ComfyUI，在节点菜单的「1人漫剧 / 视频增强」中找到节点。
 
+也可以在 `ComfyUI/custom_nodes` 目录中执行：
+
+```bash
+git clone https://github.com/shenyanping/ComfyUI-1renmanju.git
+```
+
+**模型下载（百度网盘）**：[ComfyUI-1renmanju](https://pan.baidu.com/s/15_CEVT13DbK5Cimagh5O1A)，提取码：`ugf8`。下载后按下表放置文件。
+
 | 文件 | 放置位置（相对 ComfyUI） | 用途 |
 |---|---|---|
 | `1ren-topaz-starlight-2.6.safetensors` | `models/starlight26/` | 必需，约7.89 GB |
@@ -19,6 +27,8 @@
 完整大小、SHA256及来源见 [模型清单](models/manifest.json) 和 [模型管理说明](docs/MODELS.md)。保持原帧率或降帧率不需要RIFE权重。
 
 当前仅验收支持 BF16 的 NVIDIA 显卡，本机为 RTX 3090 24GB；软件版本见 [验收环境](docs/environment.json)。不代表其他显卡和长片4K已经测试。
+
+代码不限定Windows，Linux也可按上述目录安装，但尚未完成Linux实机验收；需要支持BF16的NVIDIA显卡和匹配的CUDA版PyTorch环境。
 
 ## 使用
 
