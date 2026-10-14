@@ -55,6 +55,6 @@ python tools/verify_models.py --models-dir "你的ComfyUI/models" --with-rife
 
 ## Git管理
 
-仓库地址：<https://github.com/shenyanping/ComfyUI-1renmanju>。提交前运行 `git status --short` 和 `git diff --check`，确认没有权重、凭据、个人视频和运行日志。模型通过 `MODELS.md` 中的网盘单独提供，不推送到源码仓库。
+仓库地址：<https://github.com/shenyanping/ComfyUI-1renmanju>。提交前运行 `git status --short` 和 `git diff --check`，确认没有权重、凭据、未经确认的个人视频和运行日志。模型通过 `MODELS.md` 中的网盘单独提供，不推送到源码仓库。`docs/media/`中的对比样片是用户确认用于展示的例外，MP4仅对该具体文件放开Git忽略规则。
 
 后续更新vendor时，登记新的来源快照，复核 `docs/source-manifest.json` 的逐文件校验和差异，再做同一素材、同一参数回归。不要把宿主ComfyUI的Git提交号误记成插件上游版本。

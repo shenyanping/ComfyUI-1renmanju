@@ -21,3 +21,6 @@ dist/
 .env
 .env.*
 *.zip
+
+# 经确认用于仓库展示的对比视频，其余媒体继续忽略。
+!docs/media/chaofen-v1-comparison.mp4

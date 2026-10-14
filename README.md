@@ -4,6 +4,16 @@
 
 当前模型名：**`1ren-chaofen-v1`**。采用独立单文件加载，在本地完成视频增强；无需读取原来的零散模型文件。此名称用于项目内管理，改名不改变权重内容或来源。
 
+## 效果对比
+
+**左侧：原视频；右侧：超分结果。** 两侧同步播放，来自同一段约15秒的测试素材。
+
+![原视频与1ren-chaofen-v1超分结果同步对比](docs/media/chaofen-v1-preview.gif)
+
+[下载完整对比视频（MP4）](https://github.com/shenyanping/ComfyUI-1renmanju/raw/refs/heads/main/docs/media/chaofen-v1-comparison.mp4) · [查看样片参数](docs/media/README.md)
+
+原视频为864×496，超分结果为1254×720，均为24fps，未插帧。左侧仅普通缩放到相同显示尺寸，方便观察；上方动图经过缩小和减帧，查看细节请下载完整MP4。
+
 ## 安装
 
 1. 将本仓库放到 `ComfyUI/custom_nodes/ComfyUI-1renmanju`。
@@ -71,4 +81,4 @@ git clone https://github.com/shenyanping/ComfyUI-1renmanju.git
 - [第三方代码说明](THIRD_PARTY_NOTICES.md)
 - [变更记录](CHANGELOG.md)
 
-代码和模型分开管理；仓库中不收录研究凭据、原程序二进制、个人测试视频和大模型权重。自有集成代码尚未指定对外开源许可证，第三方部分保留各自许可，不能用其中某一份许可代表整个仓库或模型权重。
+代码和模型分开管理；仓库包含经确认的效果展示样片，不收录研究凭据、原程序二进制、未经确认的个人视频和大模型权重。自有集成代码尚未指定对外开源许可证，第三方部分保留各自许可，不能用其中某一份许可代表整个仓库或模型权重。

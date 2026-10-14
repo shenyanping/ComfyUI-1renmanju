@@ -1,0 +1,23 @@
+{
+  "source_size": [
+    864,
+    496
+  ],
+  "enhanced_size": [
+    1254,
+    720
+  ],
+  "comparison_size": [
+    2508,
+    800
+  ],
+  "fps": 24.0,
+  "frames": 361,
+  "duration_seconds": 15.041666666666666,
+  "audio_tracks": 1,
+  "mp4_bytes": 13221237,
+  "gif_bytes": 7935641,
+  "gif_frames": 90,
+  "gif_duration_seconds": 15.0,
+  "note": "使用既有完整超分测试结果；左侧原画面仅用双三次缩放对齐，右侧不追加锐化。动图为缩小和减帧预览，不用于原画质判断。"
+}
